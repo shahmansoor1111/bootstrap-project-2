@@ -1,0 +1,10 @@
+img{
+  width: 100%;
+  max-width: 100%;   /* jitna chaho */
+  height: 300px;       /* MOST IMPORTANT */
+  object-fit: cover;  /* ya contain */
+  
+}
+#coding{
+  height: 250px;       
+}
