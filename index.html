@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">i-coder</a>
+            <a class="navbar-brand" href="#">i-Coder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,12 +35,12 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Artificial intellegence</a></li>
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./ai.html">Artificial intellegence</a></li>
+                            <li><a class="dropdown-item" href="./web.html">Web Development</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Cyber Security</a></li>
+                            <li><a class="dropdown-item" href="./cyber.html">Cyber Security</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -49,11 +49,64 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+
+                </div>
             </div>
         </div>
     </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Email" required>
+                        <input type="password" class="form-control mb-2" placeholder="Password" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" class="form-control mb-2" placeholder="Full Name" required>
+                        <input type="email" class="form-control mb-2" placeholder="Email" required>
+                        <input type="password" class="form-control mb-2" placeholder="Password" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
     <div class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
             <div class="carousel-indicators">
@@ -66,7 +119,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/1.avif" class="d-block w-100" alt="...">
+                    <img src="./img/7.avif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Welcome to ICoder</h2>
                         <p>Technology News Development and Trends</p>
@@ -86,7 +139,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/7.avif" class="d-block w-100" alt="...">
+                    <img src="./img/1.avif" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Award Winning Blog</h2>
                         <p>Technology News Development and Trends</p>
@@ -109,12 +162,12 @@
         </div>
     </div>
 
-    <div class="container my-4">
+    <div class="container my-4 ">
 
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="col p-4 d-flex flex-column position-static"> <strong
                             class="d-inline-block mb-2 text-primary-emphasis">World</strong>
                         <h3 class="mb-0">Global Coding Conferences</h3>
@@ -132,7 +185,7 @@
             </div>
             <div class="col-md-6">
                 <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="col p-4 d-flex flex-column position-static"> <strong
                             class="d-inline-block mb-2 text-success-emphasis">Design</strong>
                         <h3 class="mb-0">Learn Designing</h3>
@@ -155,7 +208,7 @@
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow p-3 mb-5 bg-body-tertiary rounded "  class="position-relative" style="top: -40px;">
                     <div class="col p-4 d-flex flex-column position-static"> <strong
                             class="d-inline-block mb-2 text-primary-emphasis">World</strong>
                         <h3 class="mb-0">Programming languages</h3>
@@ -173,7 +226,7 @@
             </div>
             <div class="col-md-6">
                 <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow p-3 mb-5 bg-body-tertiary rounded"  class="position-relative" style="top: -40px;">
                     <div class="col p-4 d-flex flex-column position-static"> <strong
                             class="d-inline-block mb-2 text-success-emphasis">Design</strong>
                         <h3 class="mb-0">Learn Backend</h3>
@@ -190,6 +243,96 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" >
+
+   
+
+    <div class="row justify-content-center text-center" >
+
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+                <h2 id="list-item-1">Web Development</h2>
+                <p>Web development is the process of creating and maintaining websites and web applications that run on
+                    the internet. It involves designing the layout, building the structure, and adding functionality to
+                    ensure a smooth user experience.</p>
+                <h2 id="list-item-2">Artificial intellegence</h2>
+                <p>Artificial Intelligence (AI) is a branch of computer science that focuses on creating machines and
+                    software capable of performing tasks that normally require human intelligence. These tasks include
+                    learning from data, recognizing patterns, understanding language, making decisions, and solving
+                    problems.</p>
+                <h2 id="list-item-3">Cyber Security</h2>
+                <p>Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access,
+                    attacks, and digital threats. It focuses on securing information from hackers, malware, phishing,
+                    and data breaches that can cause financial loss or damage privacy.</p>
+            </div>
+        </div>
+    </div>
+     </div>
+
+     <div class="container justify-content-center text-center my-4">
+        <div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+     </div>
+    <footer class="bg-dark text-light pt-4 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p class="small">
+                        We provide quality products and services with customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="./about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="./contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact</h5>
+                    <p class="small mb-1">📍 Pakistan</p>
+                    <p class="small mb-1">📧 info@example.com</p>
+                    <p class="small">📞 +92 300 0000000</p>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center pb-3">
+                <small>© 2025 YourWebsite. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>

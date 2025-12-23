@@ -1,10 +1,15 @@
 img{
   width: 100%;
-  max-width: 100%;   /* jitna chaho */
   height: 300px;       /* MOST IMPORTANT */
   object-fit: cover;  /* ya contain */
   
 }
 #coding{
   height: 250px;       
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  font-size: 18px;
 }
