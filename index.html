@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i-coder - heaven for programmer</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -49,7 +49,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <div class="mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
@@ -72,13 +72,15 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <input type="email" class="form-control mb-2" placeholder="Email" required>
-                        <input type="password" class="form-control mb-2" placeholder="Password" required>
+                        <input type="email" class="form-control mb-2" id="emailss" placeholder="Email" required>
+                        <p id="checkemail"></p>
+                        <input type="password" class="form-control mb-2" id="passwordss" placeholder="Password" required>
+                        <p id="checkpassword"></p>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-primary" id="login" onclick="login()">Login</button>
                 </div>
             </div>
         </div>
@@ -94,14 +96,17 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <input type="text" class="form-control mb-2" placeholder="Full Name" required>
-                        <input type="email" class="form-control mb-2" placeholder="Email" required>
-                        <input type="password" class="form-control mb-2" placeholder="Password" required>
+                        <input type="text" class="form-control mb-2" id="fullname" placeholder="Full Name" required>
+                        <p id="nameresult"></p>
+                        <input type="email" class="form-control mb-2" id="email" placeholder="Email" required>
+                         <p id="emailresult"></p>
+                        <input type="password" class="form-control mb-2" id="password" placeholder="Password" required>
+                         <p id="passwordresult"></p>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Sign Up</button>
+                    <button type="button" class="btn btn-primary" id="signup" onclick="signups()">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -335,6 +340,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

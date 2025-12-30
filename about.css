@@ -1,10 +1,14 @@
-body{
+*{
   font-family: 'Times New Roman', Times, serif;
 }
-img{
-  width: 100%;
-  max-width: 100%;   /* jitna chaho */
-  height: 300px;       /* MOST IMPORTANT */
-  object-fit: cover;  /* ya contain */
-  
+nav{
+  height: 56px;
+}
+#search{
+  position: relative; 
+  top: 7px;
+}
+#btn{
+  position: relative; 
+  top: 7px;
 }
